@@ -1,0 +1,138 @@
+html{
+    --color-principal: white;
+    --color-secundario: #C7B198;
+    --color-texto:  #A68DAD;
+    --sombra-barra: #DFD3C3;
+    --menu-mobile: #DFD3C3;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    padding-top: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.topheader{
+    box-shadow: 0 7px 5px var(--sombra-barra);
+    position: fixed;
+    background-color: var(--color-principal);
+    width: 100%;
+    top: 0;
+    left: 0%;
+    
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+}
+
+.logo{
+    display: flex;
+    padding: 10px;
+    margin: 0%;
+}
+
+/* Menu */
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    padding: 0px 25px;
+
+}
+
+a{
+    color: var(--color-texto);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+
+}
+
+.contenido-principal{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
+.texto-principal{
+    margin-bottom: 25px;
+}
+
+.titulo-principal{
+    font-size: 56px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+.boton-principal{
+    background-color: var(--color-texto);
+    color: var(--color-principal);
+    border: none;
+    font-size: 25px;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-principal:hover{
+    filter: brightness(120%);
+}
+
+.grid-nosotros{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.grid-nosotros div{
+    background-color: var(--color-secundario);
+    text-align: center;
+    color: var(--sombra-barra);
+    border: 1px solid var(--color-texto);
+}
+
+footer{
+    width: 100%;
+    margin-top: 1rem;
+    font-family:'Roboto Slab', serif;
+    background-color: var(--color-texto);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+footer{
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales i{
+    font-size: 30px;
+    padding: 0 20px;
+}
